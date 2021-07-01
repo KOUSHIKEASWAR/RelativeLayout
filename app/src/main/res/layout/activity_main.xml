@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 1" />
+
+    <!--Button 1 initialised normally-->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="15dp"
+        android:text="Button 2" />
+
+    <!-- Button 2 positioned relative to button 1
+    using "layout_below" -->
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button"
+        android:layout_toEndOf="@+id/button2"
+        android:text="Button 3" />
+
+    <!-- Button 3 positioned relative to button 1
+    and button 2 using "layout_below" and
+    "layout_toEndOf" respectively -->
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="15dp"
+        android:text="Button 4" />
+
+    <!-- Button 4 positioned relative to button 2
+    using "layout_below" -->
+
+</RelativeLayout>
